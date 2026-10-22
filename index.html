@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LQ Branding | Diseño Web de Alta Calidad en Código Puro</title>
+  <meta name="description" content="Agencia de diseño y desarrollo web en código puro. Sitios web ultrarrápidos, 100% adaptables a móviles, con hosting de alto rendimiento y dominio propio incluido.">
+  <meta name="keywords" content="diseño web, desarrollo web corporativo, landing page, código puro, SEO, velocidad web, LQ Branding">
+  <meta name="author" content="LQ Branding">
+  
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LQ Branding | Diseño Web de Alta Calidad en Código Puro">
+  <meta property="og:description" content="Creamos sitios web ultrarrápidos, 100% adaptables a móviles y con servidor y dominio propio incluidos.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+  
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='10' fill='%231E3A5F'/><path d='M13 13v22h14v-4H18V13h-5z' fill='%230277BD'/><path d='M29 13c-4.4 0-8 3.6-8 8s3.6 8 8 8c1.8 0 3.5-.6 4.9-1.6l3.6 3.6 2.8-2.8-3.6-3.6c1-1.4 1.6-3.1 1.6-4.9 0-4.4-3.6-8.7-9.3-6.7zm0 4c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4z' fill='%23F38120'/></svg>">
+
+  <!-- Google Fonts Preconnect & Stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos Principales -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER STICKY ==================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <!-- Logo LQ Branding -->
+      <a href="#hero" class="logo" aria-label="Ir al inicio de LQ Branding">
+        <div class="logo-mark">
+          <svg viewBox="0 0 44 44" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="44" height="44" rx="10" fill="#1E3A5F"/>
+            <!-- L in Cyan Blue -->
+            <path d="M12 11V33H24V29H17V11H12Z" fill="#0277BD"/>
+            <!-- Q in Vibrant Orange -->
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 11C23.0294 11 19 15.0294 19 20C19 22.3865 19.9299 24.5559 21.4552 26.1706L19 28.6258L22.3742 32L24.8294 29.5448C26.4441 31.0701 28.6135 32 31 32C35.9706 32 40 27.9706 40 23C40 18.0294 35.9706 11 28 11ZM28 15C32.4183 15 36 18.5817 36 23C36 27.4183 32.4183 31 28 31C24.4183 31 21.5 28.0817 21.5 24.5C21.5 20.9183 24.4183 15 28 15Z" fill="#F38120"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">LQ <strong>BRANDING</strong></span>
+          <span class="logo-tagline">Web Architecture</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación Desktop -->
+      <nav class="nav" id="nav-menu" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li class="nav-item"><a href="#ventajas" class="nav-link">Ventajas</a></li>
+          <li class="nav-item"><a href="#proceso" class="nav-link">Proceso</a></li>
+          <li class="nav-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
+          <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-action">
+          <a href="#contacto" class="btn btn-primary btn-sm">Cotizar Proyecto</a>
+        </div>
+      </nav>
+
+      <!-- Botón Hamburguesa Móvil -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Desarrollo Web en Código Puro • Rendimiento Garantizado</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Diseño Web de Alta Calidad en <span class="text-gradient">Código Puro</span>
+        </h1>
+
+        <p class="hero-description">
+          Creamos sitios web ultrarrápidos, 100% adaptables a móviles y con servidor y dominio propio incluidos. La presencia digital corporativa que tu negocio merece para convertir visitas en clientes reales.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary btn-lg">
+            <span>Impulsar mi negocio</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#portafolio" class="btn btn-secondary btn-lg">
+            <span>Ver demostraciones</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">98+</span>
+            <span class="stat-label">Google PageSpeed</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">&lt; 1s</span>
+            <span class="stat-label">Tiempo de Carga</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Código a Medida</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Composition: Laptop + Mobile Mockup -->
+      <div class="hero-visual reveal" style="--delay: 200ms;">
+        <div class="mockup-stage">
+          <!-- Background Glow Effect -->
+          <div class="visual-glow" aria-hidden="true"></div>
+
+          <!-- Desktop Laptop Mockup -->
+          <div class="device-laptop">
+            <div class="laptop-screen">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <span class="browser-url">https://tuempresa.com</span>
+              </div>
+              <div class="screen-content">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80" alt="Vista previa de interfaz web moderna para empresas en laptop" loading="eager" width="900" height="560">
+                <div class="screen-overlay-tag">
+                  <span class="tag-pulse"></span>
+                  <span>Producción Activa • 99.9% Uptime</span>
+                </div>
+              </div>
+            </div>
+            <div class="laptop-base"></div>
+          </div>
+
+          <!-- Smartphone Mobile Mockup -->
+          <div class="device-phone">
+            <div class="phone-screen">
+              <div class="phone-notch"></div>
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Vista móvil optimizada en smartphone" loading="eager" width="400" height="800">
+              <div class="phone-metric">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Mobile-First OK</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Floating Speed Metric Card -->
+          <div class="floating-badge speed-card">
+            <div class="speed-gauge">
+              <span class="gauge-value">100</span>
+            </div>
+            <div class="speed-info">
+              <span class="speed-title">Performance Score</span>
+              <span class="speed-sub">Sin sobrecarga de frameworks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CORE VALUE PROPOSITION (3-COLUMN GRID) ==================== -->
+  <section class="section section-light" id="ventajas">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">¿Por qué elegir LQ Branding?</span>
+        <h2 class="section-title">Tecnología de Vanguardia Pensada para tu Rentabilidad</h2>
+        <p class="section-subtitle">
+          Eliminamos el código innecesario, las plantillas genéricas y las vulnerabilidades para ofrecerte una infraestructura digital de máximo rendimiento.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Card 1 -->
+        <article class="value-card reveal" style="--delay: 100ms;">
+          <div class="value-icon-box">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+              <line x1="8" y1="21" x2="16" y2="21"/>
+              <line x1="12" y1="17" x2="12" y2="21"/>
+            </svg>
+          </div>
+          <h3 class="value-title">100% Responsive &amp; Mobile-First</h3>
+          <p class="value-text">
+            Más del 75% del tráfico actual proviene de teléfonos móviles. Diseñamos de adentro hacia afuera, garantizando una visualización impecable, navegación táctil suave y legibilidad perfecta en smartphones, tablets y monitores 4K.
+          </p>
+          <ul class="value-features">
+            <li>Adaptación fluida sin desbordamientos</li>
+            <li>Experiencia táctil nativa y ágil</li>
+            <li>Diseño probado en múltiples resoluciones</li>
+          </ul>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="value-card reveal" style="--delay: 200ms;">
+          <div class="value-icon-box accent">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="16 18 22 12 16 6"/>
+              <polyline points="8 6 2 12 8 18"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Código Puro de Alto Rendimiento</h3>
+          <p class="value-text">
+            Desarrollamos en HTML5, CSS3 y Vanilla JavaScript artesanal. Sin la pesadez de WordPress, plugins desactualizados ni constructores visuales lentos. Tu web cargará en un parpadeo, mejorando inmediatamente tu posicionamiento en Google (SEO).
+          </p>
+          <ul class="value-features">
+            <li>Puntuaciones 95+ en Google Core Web Vitals</li>
+            <li>Cero vulnerabilidades por plugins externos</li>
+            <li>Estructura semántica que adoran los buscadores</li>
+          </ul>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="value-card reveal" style="--delay: 300ms;">
+          <div class="value-icon-box">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+              <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+              <line x1="6" y1="6" x2="6.01" y2="6"/>
+              <line x1="6" y1="18" x2="6.01" y2="18"/>
+            </svg>
+          </div>
+          <h3 class="value-title">Servidor y Dominio Propio Incluidos</h3>
+          <p class="value-text">
+            Solución "llave en mano": nos encargamos de la gestión técnica de tu dominio personalizado (.com, .cl, .net), configuración de servidores de alta disponibilidad con CDN global y certificados de seguridad SSL automáticos.
+          </p>
+          <ul class="value-features">
+            <li>Dominio propio a tu nombre</li>
+            <li>Certificado SSL HTTPS con encriptación militar</li>
+            <li>Hosting optimizado con respaldo diario</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES / PLANS SECTION ==================== -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Soluciones Corporativas</span>
+        <h2 class="section-title">Planes Diseñados para Escalar tu Negocio</h2>
+        <p class="section-subtitle">
+          Transparencia, excelencia técnica y resultados comerciales medibles. Elige el formato que mejor responda al momento de tu empresa.
+        </p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Plan 1: Landing Page -->
+        <div class="pricing-card reveal" style="--delay: 100ms;">
+          <div class="pricing-header">
+            <h3 class="plan-name">Landing Page Profesional</h3>
+            <p class="plan-description">Enfocada en máxima conversión de campañas publicitarias de Google Ads y Meta Ads.</p>
+            <div class="plan-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">180.000</span>
+              <span class="price-period">CLP / Pago único</span>
+            </div>
+            <div class="plan-badge-sub">Ideal para captación de leads rápidos</div>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="plan-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Estructura optimizada para ventas (AIDA)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Desarrollo en HTML5 &amp; CSS3 puro ultra veloz</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Formulario integrado con base de datos</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Botón flotante de WhatsApp directo</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dominio propio + Hosting por 1 año incluido</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Certificado SSL y métricas de analítica</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-footer">
+            <a href="#contacto" class="btn btn-outline btn-block" data-project="Landing Page Profesional">Cotizar Landing Page</a>
+          </div>
+        </div>
+
+        <!-- Plan 2: Web Corporativa (Featured) -->
+        <div class="pricing-card featured reveal" style="--delay: 200ms;">
+          <div class="featured-ribbon">MÁS RECOMENDADO</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">Web Corporativa a Medida</h3>
+            <p class="plan-description">La solución definitiva para consolidar autoridad, presentar servicios y generar confianza absoluta.</p>
+            <div class="plan-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">340.000</span>
+              <span class="price-period">CLP / Pago único</span>
+            </div>
+            <div class="plan-badge-sub highlight">La favorita de empresas y pymes consolidadas</div>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="plan-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Hasta 5 secciones completas o páginas modulares</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Diseño UI/UX corporativo personalizado y exclusivo</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Velocidad de carga &lt; 1 seg garantizada (Score 95+)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Optimización SEO On-Page y metadatos sociales</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dominio corporativo + Servidor de alta disponibilidad</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Correos corporativos configurados (ej. contacto@tuempresa.com)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Soporte prioritario post-lanzamiento (30 días)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-footer">
+            <a href="#contacto" class="btn btn-primary btn-block" data-project="Web Corporativa a Medida">Elegir Web Corporativa</a>
+          </div>
+        </div>
+
+        <!-- Plan 3: Rediseño y Optimización -->
+        <div class="pricing-card reveal" style="--delay: 300ms;">
+          <div class="pricing-header">
+            <h3 class="plan-name">Rediseño y Optimización</h3>
+            <p class="plan-description">Transformamos sitios lentos o anticuados en plataformas modernas, seguras y de carga instantánea.</p>
+            <div class="plan-price">
+              <span class="price-currency">$</span>
+              <span class="price-amount">240.000</span>
+              <span class="price-period">CLP / Pago único</span>
+            </div>
+            <div class="plan-badge-sub">Modernización técnica integral</div>
+          </div>
+
+          <div class="pricing-body">
+            <ul class="plan-features">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Auditoría completa de rendimiento y cuellos de botella</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Migración de código pesado a Vanilla HTML5/CSS3 limpio</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Rediseño de interfaz UI/UX moderno y corporativo</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Aceleración de carga móvil drástica (reducción del 70%)</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Mantenimiento del SEO y redireccionamiento de URLs</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Configuración de hosting ultra rápido en CDN global</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="pricing-footer">
+            <a href="#contacto" class="btn btn-outline btn-block" data-project="Rediseño y Optimización">Optimizar mi Sitio Web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WORKFLOW / PROCESS ==================== -->
+  <section class="section section-light" id="proceso">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Metodología Comprobada</span>
+        <h2 class="section-title">El Camino Claro Desde la Idea Hasta el Lanzamiento</h2>
+        <p class="section-subtitle">
+          Un proceso estructurado, transparente y sin tecnicismos confusos. Sabrás exactamente en qué etapa se encuentra tu proyecto día a día.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <!-- Step 1 -->
+        <div class="timeline-step reveal" style="--delay: 100ms;">
+          <div class="step-marker">
+            <span class="step-num">01</span>
+          </div>
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 class="step-title">Estrategia y Estructura</h3>
+            <p class="step-text">
+              Analizamos a fondo tu modelo de negocio, tu cliente ideal y tus competidores. Definimos la jerarquía de contenidos, los textos persuasivos clave y los llamados a la acción (CTAs) estratégicos.
+            </p>
+            <span class="step-time">Días 1 - 3</span>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="timeline-step reveal" style="--delay: 200ms;">
+          <div class="step-marker">
+            <span class="step-num">02</span>
+          </div>
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+            </div>
+            <h3 class="step-title">Diseño UI/UX Corporativo</h3>
+            <p class="step-text">
+              Diseñamos prototipos de alta fidelidad que reflejan fielmente la identidad de tu marca: paletas de color equilibradas, tipografía legible y micro-interacciones que generan confianza en el visitante.
+            </p>
+            <span class="step-time">Días 4 - 7</span>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="timeline-step reveal" style="--delay: 300ms;">
+          <div class="step-marker">
+            <span class="step-num">03</span>
+          </div>
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="step-title">Desarrollo en Código HTML Puro</h3>
+            <p class="step-text">
+              Traducimos el diseño en código semántico, modular y limpio sin herramientas automáticas. Optimizamos imágenes con compresión WebP, estilizamos con CSS moderno y garantizamos respuesta fluida en cada dispositivo.
+            </p>
+            <span class="step-time">Días 8 - 12</span>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="timeline-step reveal" style="--delay: 400ms;">
+          <div class="step-marker">
+            <span class="step-num">04</span>
+          </div>
+          <div class="step-card">
+            <div class="step-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="step-title">Lanzamiento y Dominio</h3>
+            <p class="step-text">
+              Conectamos tu dominio personalizado, configuramos la red de entrega de contenido (CDN), activamos el certificado de seguridad SSL y realizamos pruebas de rendimiento exhaustivas antes de la entrega final.
+            </p>
+            <span class="step-time">Días 13 - 15</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PORTFOLIO / LIVE SHOWCASE ==================== -->
+  <section class="section" id="portafolio">
+    <div class="container">
+      <div class="section-header text-center reveal">
+        <span class="section-tag">Demostraciones en Vivo</span>
+        <h2 class="section-title">Proyectos Reales con Rendimiento Extremo</h2>
+        <p class="section-subtitle">
+          Explora ejemplos interactivos desarrollados bajo nuestro estándar de código puro. Creados para alojarse en Netlify con carga instantánea.
+        </p>
+      </div>
+
+      <div class="grid grid-3">
+        <!-- Project 1 -->
+        <article class="project-card reveal" style="--delay: 100ms;">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Sitio web para firma de asesoría legal y corporativa" loading="lazy" width="800" height="500">
+            <div class="project-tags">
+              <span class="ptag">Asesoría Legal</span>
+              <span class="ptag-perf">99/100 Core Web Vitals</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">LexGlobal Consultores</h3>
+            <p class="project-summary">
+              Plataforma institucional para firma jurídica corporativa. Diseño sobrio, formularios de asesoría clasificados y tiempos de respuesta de 0.6 segundos.
+            </p>
+            <div class="project-tech-stack">
+              <span>HTML5</span>
+              <span>CSS3 Flex/Grid</span>
+              <span>Vanilla JS</span>
+              <span>Netlify CDN</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://example-lexglobal.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>Ver Demo en Vivo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" style="--delay: 200ms;">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Landing page para centro médico y dental de alta precisión" loading="lazy" width="800" height="500">
+            <div class="project-tags">
+              <span class="ptag">Salud &amp; Medicina</span>
+              <span class="ptag-perf">100/100 Mobile Score</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Clínica OdontoSmart</h3>
+            <p class="project-summary">
+              Landing page de alta conversión para reserva de citas odontológicas. Agendamiento rápido conectado a WhatsApp y base de datos con tasa de conversión del 14.8%.
+            </p>
+            <div class="project-tech-stack">
+              <span>HTML5</span>
+              <span>CSS Variables</span>
+              <span>Supabase REST</span>
+              <span>Netlify</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://example-odontosmart.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>Ver Demo en Vivo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" style="--delay: 300ms;">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Portal inmobiliario corporativo y catálogo de propiedades" loading="lazy" width="800" height="500">
+            <div class="project-tags">
+              <span class="ptag">Finanzas &amp; Real Estate</span>
+              <span class="ptag-perf">98/100 Performance</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">InverCapital Inmobiliaria</h3>
+            <p class="project-summary">
+              Portal corporativo para fondo de inversión en propiedades. Catálogo filtrable mediante Vanilla JS con carga diferida de imágenes y diseño ultra limpio.
+            </p>
+            <div class="project-tech-stack">
+              <span>HTML5 Semántico</span>
+              <span>Modern CSS</span>
+              <span>ES6+ JS</span>
+              <span>Netlify CDN</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://example-invercapital.netlify.app" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                <span>Ver Demo en Vivo</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Trust Assurance Box -->
+      <div class="trust-banner reveal">
+        <div class="trust-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F38120" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="trust-info">
+          <h4>Garantía de Velocidad y Propiedad 100% Tuya</h4>
+          <p>Entregamos el código fuente completo en un repositorio de GitHub a tu nombre. Sin cuotas de secuestro ni ataduras técnicas.</p>
+        </div>
+        <div class="trust-action">
+          <a href="#contacto" class="btn btn-secondary btn-sm">Solicitar mi auditoría gratuita</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION & SUPABASE INTEGRATION ==================== -->
+  <section class="section section-light" id="contacto">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Columna de Información -->
+        <div class="contact-info reveal">
+          <span class="section-tag">Conversemos Hoy</span>
+          <h2 class="section-title">Comienza la Transformación Digital de tu Empresa</h2>
+          <p class="contact-text">
+            Cuéntanos sobre tu negocio, tus metas comerciales o el sitio que imaginas. Te enviaremos una propuesta formal en menos de 24 horas hábiles con plazos y cotización exacta.
+          </p>
+
+          <div class="contact-channels">
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-label">Correo Electrónico Directo</span>
+                <a href="mailto:contacto@lqbranding.com" class="channel-value">contacto@lqbranding.com</a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon accent">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-label">WhatsApp Corporativo</span>
+                <a href="https://wa.me/56900000000?text=Hola%20LQ%20Branding,%20deseo%20cotizar%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="channel-value">+56 9 0000 0000</a>
+              </div>
+            </div>
+
+            <div class="channel-card">
+              <div class="channel-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </div>
+              <div class="channel-meta">
+                <span class="channel-label">Horario de Atención</span>
+                <span class="channel-value">Lunes a Viernes: 09:00 - 18:30 hrs</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="security-guarantee">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#22C55E" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Tus datos son 100% confidenciales y protegidos bajo estricto secreto profesional.</span>
+          </div>
+        </div>
+
+        <!-- Columna de Formulario (Conectado a Supabase) -->
+        <div class="contact-form-wrapper reveal" style="--delay: 150ms;">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-header">
+              <h3 class="form-title">Solicitar Cotización Formal</h3>
+              <p class="form-subtitle">Completa el formulario y te responderemos en breve.</p>
+            </div>
+
+            <!-- Nombre -->
+            <div class="form-group">
+              <label for="fullName" class="form-label">Nombre Completo <span class="required">*</span></label>
+              <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Ej. Carlos Mendoza" required autocomplete="name">
+              <span class="field-error" id="error-fullName"></span>
+            </div>
+
+            <!-- Email & Teléfono en 2 columnas -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email" class="form-label">Correo Electrónico <span class="required">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="carlos@empresa.com" required autocomplete="email">
+                <span class="field-error" id="error-email"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone" class="form-label">Teléfono / WhatsApp <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+56 9 1234 5678" required autocomplete="tel">
+                <span class="field-error" id="error-phone"></span>
+              </div>
+            </div>
+
+            <!-- Tipo de Proyecto -->
+            <div class="form-group">
+              <label for="projectType" class="form-label">Tipo de Proyecto <span class="required">*</span></label>
+              <select id="projectType" name="projectType" class="form-select" required>
+                <option value="" disabled selected>Selecciona una opción...</option>
+                <option value="Landing Page Profesional">Landing Page Profesional ($180.000)</option>
+                <option value="Web Corporativa a Medida">Web Corporativa a Medida ($340.000)</option>
+                <option value="Rediseño y Optimización">Rediseño y Optimización ($240.000)</option>
+                <option value="Proyecto Especial / A Medida">Otro Requerimiento Especial</option>
+              </select>
+              <span class="field-error" id="error-projectType"></span>
+            </div>
+
+            <!-- Mensaje -->
+            <div class="form-group">
+              <label for="message" class="form-label">Detalles del Proyecto <span class="required">*</span></label>
+              <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Describe brevemente tus objetivos, fecha estimada de lanzamiento o enlaces de referencia si los tienes..." required></textarea>
+              <span class="field-error" id="error-message"></span>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button type="submit" class="btn btn-primary btn-block btn-submit" id="submit-btn">
+              <span class="btn-text">Enviar Solicitud de Cotización</span>
+              <span class="btn-loader" aria-hidden="true">
+                <svg class="spinner" viewBox="0 0 50 50">
+                  <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+                </svg>
+              </span>
+            </button>
+
+            <!-- Mensajes de Estado (Éxito / Error) -->
+            <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <!-- Branding Col -->
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-mark">
+              <svg viewBox="0 0 44 44" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect width="44" height="44" rx="10" fill="#0277BD"/>
+                <path d="M12 11V33H24V29H17V11H12Z" fill="#FFFFFF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 11C23.0294 11 19 15.0294 19 20C19 22.3865 19.9299 24.5559 21.4552 26.1706L19 28.6258L22.3742 32L24.8294 29.5448C26.4441 31.0701 28.6135 32 31 32C35.9706 32 40 27.9706 40 23C40 18.0294 35.9706 11 28 11ZM28 15C32.4183 15 36 18.5817 36 23C36 27.4183 32.4183 31 28 31C24.4183 31 21.5 28.0817 21.5 24.5C21.5 20.9183 24.4183 15 28 15Z" fill="#F38120"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title text-white">LQ <strong>BRANDING</strong></span>
+              <span class="logo-tagline text-slate">Web Architecture</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Agencia boutique especializada en diseño y desarrollo web corporativo en código puro. Creamos activos digitales veloces, rentables y duraderos.
+          </p>
+        </div>
+
+        <!-- Enlaces Rápidos -->
+        <div class="footer-links-col">
+          <h4 class="footer-title">Navegación</h4>
+          <ul class="footer-menu">
+            <li><a href="#hero">Inicio</a></li>
+            <li><a href="#servicios">Servicios &amp; Planes</a></li>
+            <li><a href="#ventajas">Nuestra Tecnología</a></li>
+            <li><a href="#proceso">Metodología</a></li>
+            <li><a href="#portafolio">Demostraciones</a></li>
+          </ul>
+        </div>
+
+        <!-- Servicios -->
+        <div class="footer-links-col">
+          <h4 class="footer-title">Servicios</h4>
+          <ul class="footer-menu">
+            <li><a href="#servicios">Landing Pages de Alta Conversión</a></li>
+            <li><a href="#servicios">Sitios Web Corporativos</a></li>
+            <li><a href="#servicios">Rediseño &amp; Aceleración Web</a></li>
+            <li><a href="#servicios">Servidores de Alto Rendimiento</a></li>
+            <li><a href="#servicios">Optimización SEO Técnico</a></li>
+          </ul>
+        </div>
+
+        <!-- Contacto Directo -->
+        <div class="footer-links-col">
+          <h4 class="footer-title">Contacto</h4>
+          <p class="footer-contact-item">
+            <strong>Email:</strong><br>
+            <a href="mailto:contacto@lqbranding.com">contacto@lqbranding.com</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>WhatsApp:</strong><br>
+            <a href="https://wa.me/56900000000">+56 9 0000 0000</a>
+          </p>
+          <p class="footer-contact-item">
+            <strong>Disponibilidad:</strong><br>
+            Proyectos activos para entrega en 15 días
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> <strong>LQ Branding</strong>. Todos los derechos reservados. Desarrollado en código puro sin dependencias pesadas.</p>
+        <div class="footer-bottom-badges">
+          <span class="badge-pill">HTML5 Puro</span>
+          <span class="badge-pill">CSS3 Vanilla</span>
+          <span class="badge-pill">Netlify Ready</span>
+          <span class="badge-pill">Supabase Secure</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== BOTÓN FLOTANTE WHATSAPP ==================== -->
+  <a href="https://wa.me/56900000000?text=Hola%20LQ%20Branding,%20estoy%20interesado%20en%20cotizar%20un%20sitio%20web" class="whatsapp-float" id="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar a LQ Branding vía WhatsApp">
+    <div class="whatsapp-tooltip">¡Escríbenos por WhatsApp!</div>
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- Script Principal Vanilla JS -->
+  <script src="app.js"></script>
+</body>
+</html>
