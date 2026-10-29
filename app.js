@@ -34,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const submitBtn = document.getElementById('submit-btn');
   const formStatus = document.getElementById('form-status');
   const currentYearSpan = document.getElementById('current-year');
-  const pricingButtons = document.querySelectorAll('[data-project]');
 
   /* --------------------------------------------------------------------------
      3. AÑO DINÁMICO EN FOOTER
@@ -148,19 +147,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fallback para navegadores antiguos sin soporte
     revealElements.forEach(el => el.classList.add('is-visible'));
   }
-
-  /* --------------------------------------------------------------------------
-     8. AUTO-SELECCIÓN DE PLAN DESDE LAS TARJETAS DE PRECIO
-     -------------------------------------------------------------------------- */
-  pricingButtons.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      const selectedPlan = btn.getAttribute('data-project');
-      const selectElement = document.getElementById('projectType');
-      if (selectElement && selectedPlan) {
-        selectElement.value = selectedPlan;
-      }
-    });
-  });
 
   /* --------------------------------------------------------------------------
      9. VALIDACIÓN Y ENVÍO DEL FORMULARIO (SUPABASE REST API)
