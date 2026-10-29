@@ -80,8 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', toggleMobileMenu);
 
-    // Cerrar al hacer clic en cualquier enlace
-    navLinks.forEach(link => {
+    // Cerrar al hacer clic en cualquier enlace (incluyendo el botón de cotizar)
+    const allNavAnchors = navMenu.querySelectorAll('a');
+    allNavAnchors.forEach(link => {
       link.addEventListener('click', () => {
         if (navMenu.classList.contains('active')) {
           closeMobileMenu();
