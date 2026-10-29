@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
      Número oficial para recibir los mensajes de cotización
      -------------------------------------------------------------------------- */
   const WHATSAPP_CONFIG = {
-    // Número con código de país (sin espacios ni símbolos, ej: '56900000000')
-    phone: '56900000000'
+    // Número con código internacional de Argentina (54 9 + 11 4494-1997)
+    phone: '5491144941997'
   };
 
   /* --------------------------------------------------------------------------

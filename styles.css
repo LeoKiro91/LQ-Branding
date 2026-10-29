@@ -1796,6 +1796,50 @@ button, input, select, textarea {
   max-width: 320px;
 }
 
+/* Footer Social Icons */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: var(--space-lg);
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-full);
+  background: color-mix(in srgb, var(--color-accent-blue) 6%, #060809);
+  border: 1.5px solid color-mix(in srgb, var(--color-accent-blue) 35%, transparent);
+  color: #CBD5E1;
+  transition: all var(--dur) ease, transform var(--transition-fast);
+}
+
+.social-btn:hover {
+  transform: translateY(-3px) scale(1.06);
+  color: #FFFFFF;
+}
+
+.social-btn.instagram:hover {
+  border-color: #E1306C;
+  background: color-mix(in srgb, #E1306C 25%, #060809);
+  color: #FFFFFF;
+  box-shadow: 
+    0 0 var(--spread) #E1306C,
+    0 0 var(--glow) color-mix(in srgb, #E1306C 70%, transparent);
+}
+
+.social-btn.whatsapp:hover {
+  border-color: #25D366;
+  background: color-mix(in srgb, #25D366 25%, #060809);
+  color: #FFFFFF;
+  box-shadow: 
+    0 0 var(--spread) #25D366,
+    0 0 var(--glow) color-mix(in srgb, #25D366 70%, transparent);
+}
+
 .footer-title {
   color: #FFFFFF;
   font-size: 1rem;
