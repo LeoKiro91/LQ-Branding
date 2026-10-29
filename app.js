@@ -9,18 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   /* --------------------------------------------------------------------------
-     1. SUPABASE CONFIGURATION
-     Reemplaza con los datos de tu proyecto de Supabase (Settings > API)
+     1. CONFIGURACIÓN WHATSAPP (100% FRONTEND)
+     Número oficial para recibir los mensajes de cotización
      -------------------------------------------------------------------------- */
-  const SUPABASE_CONFIG = {
-    // Ejemplo: 'https://xyzcompany.supabase.co'
-    url: 'YOUR_SUPABASE_URL',
-    
-    // Tu Public Anon Key (la clave pública segura para el frontend)
-    anonKey: 'YOUR_SUPABASE_ANON_KEY',
-    
-    // Nombre exacto de la tabla creada en Supabase SQL Editor
-    table: 'contact_leads'
+  const WHATSAPP_CONFIG = {
+    // Número con código de país (sin espacios ni símbolos, ej: '56900000000')
+    phone: '56900000000'
   };
 
   /* --------------------------------------------------------------------------
@@ -184,7 +178,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Limpiar errores mientras el usuario escribe
-  ['fullName', 'email', 'phone', 'projectType', 'message'].forEach(id => {
+  ['fullName', 'email', 'phone', 'message'].forEach(id => {
     const el = document.getElementById(id);
     if (el) {
       el.addEventListener('input', () => clearFieldError(id));
@@ -193,7 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   if (contactForm) {
-    contactForm.addEventListener('submit', async (e) => {
+    contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
 
       // Resetear estados
@@ -203,7 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
       const fullName = document.getElementById('fullName').value.trim();
       const email = document.getElementById('email').value.trim();
       const phone = document.getElementById('phone').value.trim();
-      const projectType = document.getElementById('projectType').value;
       const message = document.getElementById('message').value.trim();
 
       let hasErrors = false;
@@ -230,15 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clearFieldError('phone');
       }
 
-      if (!projectType) {
-        showFieldError('projectType', 'Por favor selecciona el tipo de proyecto que necesitas.');
-        hasErrors = true;
-      } else {
-        clearFieldError('projectType');
-      }
-
-      if (!message || message.length < 10) {
-        showFieldError('message', 'Por favor describe brevemente tu requerimiento (mínimo 10 caracteres).');
+      if (!message || message.length < 5) {
+        showFieldError('message', 'Por favor describe brevemente tu requerimiento o consulta.');
         hasErrors = true;
       } else {
         clearFieldError('message');
@@ -246,79 +232,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (hasErrors) return;
 
-      // Activar estado de carga en el botón
-      submitBtn.classList.add('loading');
-      submitBtn.disabled = true;
+      // Construcción del mensaje formateado para WhatsApp
+      const whatsappText = `*Solicitud de Cotización - LQ Branding*
 
-      const payload = {
-        full_name: fullName,
-        email: email,
-        phone: phone,
-        project_type: projectType,
-        message: message,
-        created_at: new Date().toISOString()
-      };
+*Nombre:* ${fullName}
+*Email:* ${email}
+*Teléfono:* ${phone}
 
-      try {
-        // Verificar si se han configurado las claves reales de Supabase
-        const isSupabaseConfigured = 
-          SUPABASE_CONFIG.url !== 'YOUR_SUPABASE_URL' && 
-          SUPABASE_CONFIG.anonKey !== 'YOUR_SUPABASE_ANON_KEY' &&
-          !SUPABASE_CONFIG.url.includes('YOUR_SUPABASE');
+*Mensaje:*
+${message}`;
 
-        if (!isSupabaseConfigured) {
-          // MODO DE DEMOSTRACIÓN / LOCAL:
-          // Simula una llamada asíncrona exitosa y muestra la instrucción clara al desarrollador
-          await new Promise(resolve => setTimeout(resolve, 800));
+      const whatsappUrl = `https://wa.me/${WHATSAPP_CONFIG.phone}?text=${encodeURIComponent(whatsappText)}`;
 
-          console.info('📋 [LQ Branding] Datos del Lead recibidos correctamente en modo local:', payload);
+      // Notificación de éxito en pantalla
+      formStatus.className = 'form-status success';
+      formStatus.innerHTML = `
+        <strong>¡Datos validados con éxito!</strong><br>
+        Abriendo WhatsApp para enviar tu mensaje directamente...
+      `;
 
-          formStatus.className = 'form-status success';
-          formStatus.innerHTML = `
-            <strong>¡Solicitud enviada con éxito!</strong><br>
-            Gracias ${fullName}. Hemos recibido tu mensaje y te contactaremos en menos de 24 horas hábiles.
-            <br><small style="color:#047857; margin-top:4px; display:inline-block;">(Nota de desarrollo: Para guardar en Supabase real, coloca tus claves en <code>app.js</code> siguiendo la guía).</small>
-          `;
-          contactForm.reset();
-        } else {
-          // LLAMADA REAL A SUPABASE REST API (vía Vanilla Fetch, sin librerías pesadas)
-          const endpoint = `${SUPABASE_CONFIG.url.replace(/\/$/, '')}/rest/v1/${SUPABASE_CONFIG.table}`;
+      // Abrir WhatsApp en una nueva pestaña
+      window.open(whatsappUrl, '_blank');
 
-          const response = await fetch(endpoint, {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              'apikey': SUPABASE_CONFIG.anonKey,
-              'Authorization': `Bearer ${SUPABASE_CONFIG.anonKey}`,
-              'Prefer': 'return=minimal'
-            },
-            body: JSON.stringify(payload)
-          });
-
-          if (!response.ok) {
-            const errorData = await response.json().catch(() => ({}));
-            throw new Error(errorData.message || `Error del servidor HTTP ${response.status}`);
-          }
-
-          // Éxito real en Supabase
-          formStatus.className = 'form-status success';
-          formStatus.innerHTML = `
-            <strong>¡Solicitud recibida exitosamente!</strong><br>
-            Muchas gracias, ${fullName}. Nuestro equipo de arquitectura web revisará los requerimientos de tu proyecto y te contactará a la brevedad.
-          `;
-          contactForm.reset();
-        }
-      } catch (err) {
-        console.error('Error al enviar formulario a Supabase:', err);
-        formStatus.className = 'form-status error';
-        formStatus.innerHTML = `
-          <strong>No fue posible enviar tu mensaje en este momento.</strong><br>
-          Por favor contáctanos directamente a nuestro correo <a href="mailto:contacto@lqbranding.com" style="text-decoration:underline; font-weight:600;">contacto@lqbranding.com</a> o por WhatsApp.
-        `;
-      } finally {
-        submitBtn.classList.remove('loading');
-        submitBtn.disabled = false;
-      }
+      // Limpiar formulario tras abrir
+      contactForm.reset();
     });
   }
 });

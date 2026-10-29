@@ -426,64 +426,35 @@ button, input, select, textarea {
 
 /* Logo */
 .logo {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: 0.85rem;
+  text-decoration: none;
 }
 
-.logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform var(--transition-fast);
+.logo-img {
+  height: 52px;
+  width: auto;
+  max-width: 175px;
+  object-fit: contain;
+  display: block;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+  filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.45));
 }
 
-.logo-mark svg {
-  width: 44px;
-  height: 44px;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+.logo:hover .logo-img {
+  transform: scale(1.05);
 }
 
-.logo-mark svg rect {
-  fill: #1E293B;
-  stroke: rgba(255, 255, 255, 0.18);
-  stroke-width: 1.5px;
+.footer-logo-img {
+  height: 64px;
+  max-width: 220px;
 }
 
-.logo-mark svg path[fill="#0277BD"] {
-  fill: #38BDF8;
-}
-
-.logo:hover .logo-mark {
-  transform: scale(1.08) rotate(-2deg);
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-title {
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  color: #FFFFFF;
-  letter-spacing: -0.01em;
-  line-height: 1.1;
-}
-
-.logo-title strong {
-  color: #38BDF8;
-  font-weight: 800;
-  text-shadow: 0 0 16px rgba(56, 189, 248, 0.4);
-}
-
-.logo-tagline {
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  color: #94A3B8;
-  font-weight: 600;
+@media (max-width: 991px) {
+  .logo-img {
+    height: 44px;
+    max-width: 145px;
+  }
 }
 
 /* Desktop Navigation Menu */

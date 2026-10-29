@@ -12,10 +12,11 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="LQ Branding | Diseño Web de Alta Calidad en Código Puro">
   <meta property="og:description" content="Creamos sitios web ultrarrápidos, 100% adaptables a móviles y con servidor y dominio propio incluidos.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:image" content="img/LQ-LOGO.png">
   
-  <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'><rect width='48' height='48' rx='10' fill='%231E3A5F'/><path d='M13 13v22h14v-4H18V13h-5z' fill='%230277BD'/><path d='M29 13c-4.4 0-8 3.6-8 8s3.6 8 8 8c1.8 0 3.5-.6 4.9-1.6l3.6 3.6 2.8-2.8-3.6-3.6c1-1.4 1.6-3.1 1.6-4.9 0-4.4-3.6-8.7-9.3-6.7zm0 4c2.2 0 4 1.8 4 4s-1.8 4-4 4-4-1.8-4-4 1.8-4 4-4z' fill='%23F38120'/></svg>">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/LQ-LOGO.png">
+  <link rel="apple-touch-icon" href="img/LQ-LOGO.png">
 
   <!-- Google Fonts Preconnect & Stylesheet -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,26 +33,13 @@
     <div class="container header-container">
       <!-- Logo LQ Branding -->
       <a href="#hero" class="logo" aria-label="Ir al inicio de LQ Branding">
-        <div class="logo-mark">
-          <svg viewBox="0 0 44 44" width="40" height="40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="44" height="44" rx="10" fill="#1E3A5F"/>
-            <!-- L in Cyan Blue -->
-            <path d="M12 11V33H24V29H17V11H12Z" fill="#0277BD"/>
-            <!-- Q in Vibrant Orange -->
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M28 11C23.0294 11 19 15.0294 19 20C19 22.3865 19.9299 24.5559 21.4552 26.1706L19 28.6258L22.3742 32L24.8294 29.5448C26.4441 31.0701 28.6135 32 31 32C35.9706 32 40 27.9706 40 23C40 18.0294 35.9706 11 28 11ZM28 15C32.4183 15 36 18.5817 36 23C36 27.4183 32.4183 31 28 31C24.4183 31 21.5 28.0817 21.5 24.5C21.5 20.9183 24.4183 15 28 15Z" fill="#F38120"/>
-          </svg>
-        </div>
-        <div class="logo-text">
-          <span class="logo-title">LQ <strong>BRANDING</strong></span>
-          <span class="logo-tagline">Web Architecture</span>
-        </div>
+        <img src="img/LQ-LOGO.png" alt="LQ Branding - Diseño y Desarrollo Web" class="logo-img">
       </a>
 
       <!-- Menú de Navegación Desktop -->
       <nav class="nav" id="nav-menu" aria-label="Navegación principal">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#ventajas" class="nav-link">Ventajas</a></li>
-          <li class="nav-item"><a href="#portafolio" class="nav-link">Portafolio</a></li>
+          <li class="nav-item"><a href="#ventajas" class="nav-link">Servicios &amp; Ventajas</a></li>
           <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
         </ul>
         <div class="nav-action">
@@ -87,11 +75,11 @@
 
         <div class="hero-actions">
           <a href="#contacto" class="btn btn-primary btn-lg">
-            <span>Impulsar mi negocio</span>
+            <span>Solicitar Cotización</span>
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
-          <a href="#portafolio" class="btn btn-secondary btn-lg">
-            <span>Ver demostraciones</span>
+          <a href="https://wa.me/56900000000?text=Hola%20LQ%20Branding,%20deseo%20cotizar%20un%20proyecto%20web" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-lg">
+            <span>Escribir por WhatsApp</span>
           </a>
         </div>
 
@@ -241,8 +229,8 @@
     </div>
   </section>
 
-  <!-- ==================== PORTFOLIO / LIVE SHOWCASE ==================== -->
-  <section class="section" id="portafolio">
+  <!-- ==================== DEMOSTRACIONES EN VIVO (OCULTO TEMPORALMENTE) ==================== -->
+  <section class="section" id="portafolio" style="display: none;" aria-hidden="true">
     <div class="container">
       <div class="section-header text-center reveal">
         <span class="section-tag">Demostraciones en Vivo</span>
@@ -437,19 +425,6 @@
               </div>
             </div>
 
-            <!-- Tipo de Proyecto -->
-            <div class="form-group">
-              <label for="projectType" class="form-label">Tipo de Proyecto <span class="required">*</span></label>
-              <select id="projectType" name="projectType" class="form-select" required>
-                <option value="" disabled selected>Selecciona una opción...</option>
-                <option value="Landing Page Profesional">Landing Page Profesional ($180.000)</option>
-                <option value="Web Corporativa a Medida">Web Corporativa a Medida ($340.000)</option>
-                <option value="Rediseño y Optimización">Rediseño y Optimización ($240.000)</option>
-                <option value="Proyecto Especial / A Medida">Otro Requerimiento Especial</option>
-              </select>
-              <span class="field-error" id="error-projectType"></span>
-            </div>
-
             <!-- Mensaje -->
             <div class="form-group">
               <label for="message" class="form-label">Detalles del Proyecto <span class="required">*</span></label>
@@ -457,14 +432,12 @@
               <span class="field-error" id="error-message"></span>
             </div>
 
-            <!-- Botón de Envío -->
+            <!-- Botón de Envío Directo a WhatsApp -->
             <button type="submit" class="btn btn-primary btn-block btn-submit" id="submit-btn">
-              <span class="btn-text">Enviar Solicitud de Cotización</span>
-              <span class="btn-loader" aria-hidden="true">
-                <svg class="spinner" viewBox="0 0 50 50">
-                  <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
-                </svg>
-              </span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span class="btn-text">Enviar Mensaje por WhatsApp</span>
             </button>
 
             <!-- Mensajes de Estado (Éxito / Error) -->
@@ -481,19 +454,9 @@
       <div class="footer-top">
         <!-- Branding Col -->
         <div class="footer-brand">
-          <div class="logo">
-            <div class="logo-mark">
-              <svg viewBox="0 0 44 44" width="34" height="34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <rect width="44" height="44" rx="10" fill="#0277BD"/>
-                <path d="M12 11V33H24V29H17V11H12Z" fill="#FFFFFF"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M28 11C23.0294 11 19 15.0294 19 20C19 22.3865 19.9299 24.5559 21.4552 26.1706L19 28.6258L22.3742 32L24.8294 29.5448C26.4441 31.0701 28.6135 32 31 32C35.9706 32 40 27.9706 40 23C40 18.0294 35.9706 11 28 11ZM28 15C32.4183 15 36 18.5817 36 23C36 27.4183 32.4183 31 28 31C24.4183 31 21.5 28.0817 21.5 24.5C21.5 20.9183 24.4183 15 28 15Z" fill="#F38120"/>
-              </svg>
-            </div>
-            <div class="logo-text">
-              <span class="logo-title text-white">LQ <strong>BRANDING</strong></span>
-              <span class="logo-tagline text-slate">Web Architecture</span>
-            </div>
-          </div>
+          <a href="#hero" class="logo footer-logo" aria-label="Ir al inicio de LQ Branding">
+            <img src="img/LQ-LOGO.png" alt="LQ Branding - Diseño y Desarrollo Web" class="logo-img footer-logo-img">
+          </a>
           <p class="footer-desc">
             Agencia boutique especializada en diseño y desarrollo web corporativo en código puro. Creamos activos digitales veloces, rentables y duraderos.
           </p>
@@ -504,8 +467,7 @@
           <h4 class="footer-title">Navegación</h4>
           <ul class="footer-menu">
             <li><a href="#hero">Inicio</a></li>
-            <li><a href="#ventajas">Ventajas</a></li>
-            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#ventajas">Servicios &amp; Ventajas</a></li>
             <li><a href="#contacto">Contacto</a></li>
           </ul>
         </div>
